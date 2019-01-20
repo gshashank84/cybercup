@@ -5,8 +5,8 @@ from starlette.middleware.cors import CORSMiddleware
 import uvicorn, aiohttp, asyncio
 from io import BytesIO
 
-from fastai import *
-from fastai.vision import *
+from fastai.vision import ImageDataBunch, create_cnn, open_image, get_tranforms, imagenet_stats, models
+from fastai import Path
 
 model_file_url = 'https://drive.google.com/uc?export=download&id=1DYL1NDeS24L7NMpRItYi2d8jewh_joS2'
 model_file_name = 'model'
